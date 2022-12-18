@@ -1,6 +1,6 @@
 # :mag_right: Textrac
 ---
-Textrac is a text detection app made with Python and Tesseract. It can run on any desktop machine provided that the machine has Python installed as well as all the prerequites in running the app.
+Textrac is a text detection app made with Python and Tesseract. It can run on any desktop machine provided that the machine has Python installed as well as all the prerequisites in running the app.
 
 ---
 
