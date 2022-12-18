@@ -58,3 +58,6 @@
 5. If you want to screencapture, you may Press the `S` key to save the image.
 6. The screencaptured image would then be saved in the root directory of this app.
 7. The results will be shown. You may click the window and the Press the `X` key to exit.
+
+---
+Note: remove_noise.py can also be tweaked and integrated for additional image preprocessing. It was retrieved from [here](https://github.com/yardstick17/image_text_reader/tree/master/image_preprocessing).

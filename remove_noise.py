@@ -23,7 +23,6 @@ def get_size_of_scaled_image(im):
 
 
 def process_image_for_ocr(file_path):
-    # logging.info('Processing image for text Extraction')
     temp_filename = set_image_dpi(file_path)
     im_new = remove_noise_and_smooth(temp_filename)
     return im_new
@@ -36,7 +35,7 @@ def set_image_dpi(file_path):
     im_resized = im.resize(size, Image.ANTIALIAS)
     temp_file = tempfile.NamedTemporaryFile(delete=False, suffix='.jpg')
     temp_filename = temp_file.name
-    im_resized.save(temp_filename, dpi=(300, 300))  # best for OCR
+    im_resized.save(temp_filename, dpi=(300, 300))
     return temp_filename
 
 
@@ -49,7 +48,6 @@ def image_smoothening(img):
 
 
 def remove_noise_and_smooth(file_name):
-    # logging.info('Removing noise and smoothening image')
     img = cv2.imread(file_name)
     h, w, *_ = img.shape
     scale_percent = 100 # percent of original size
