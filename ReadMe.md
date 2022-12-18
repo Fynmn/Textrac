@@ -1,5 +1,8 @@
 # :mag_right: Textrac
 ---
+Textrac is a text detection app made with Python and Tesseract. It can run on any desktop machine provided that the machine has Python installed as well as all the prerequites in running the app.
+
+---
 
 #### :bulb: Features
 ---
@@ -58,6 +61,11 @@
 5. If you want to screencapture, you may Press the `S` key to save the image.
 6. The screencaptured image would then be saved in the root directory of this app.
 7. The results will be shown. You may click the window and the Press the `X` key to exit.
+
+---
+#### :sparkles: Future Plans
+---
+Textrac is currently fully functional as a desktop/console app. There is one issue when it comes to splitting the text of the result in the Webcam Text Detection because it is not properly documented on how to do that.
 
 ---
 Note: remove_noise.py can also be tweaked and integrated for additional image preprocessing. It was retrieved from [here](https://github.com/yardstick17/image_text_reader/tree/master/image_preprocessing).
