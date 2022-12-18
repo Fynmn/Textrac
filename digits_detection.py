@@ -1,9 +1,5 @@
 import cv2
 import pytesseract
-import numpy as np
-from PIL import ImageGrab
-import time
-
 
 pytesseract.pytesseract.tesseract_cmd = 'C:\\Program Files\\Tesseract-OCR\\tesseract.exe'
 
@@ -42,7 +38,6 @@ while True:
 
     for b in boxes.splitlines():
         b = b.split(' ')
-        # print(b)
         num.append(b[0])
         x, y, w, h = int(b[1]), int(b[2]), int(b[3]), int(b[4])
         cv2.rectangle(img, (x,hImg- y), (w,hImg- h), (50, 50, 255), 2)
@@ -53,9 +48,9 @@ while True:
 
     print("\nClick the window and PRESS 'X' to exit.\n")
 
-    cv2.namedWindow('Digit Detection', cv2.WINDOW_NORMAL)
-    cv2.resizeWindow('Digit Detection', 500, 500)
-    cv2.imshow('Digit Detection', img)
+    cv2.namedWindow('Textrac - Digit Detection', cv2.WINDOW_NORMAL)
+    cv2.resizeWindow('Textrac - Digit Detection', 500, 500)
+    cv2.imshow('Textrac - Digit Detection', img)
 
     if cv2.waitKey(0) & 0xFF==ord('x'):
         break
